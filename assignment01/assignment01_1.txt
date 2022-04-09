@@ -1,0 +1,89 @@
+###########################################################
+1.1: Basic Commands - Values (20 Points)
+###########################################################
+
+>>> 7 / 2, type(7 / 2)
+(3.5, <class 'float'>)
+
+>>> 7 / 2.0, type(7 / 2.0)
+(3.5, <class 'float'>)
+
+>>> 7 // 2, type(7 // 2)
+(3, <class 'int'>)
+
+>>> 7 // 2.0, type(7 // 2.0)
+(3.0, <class 'float'>)
+
+>>> 7 % 2, type(7 % 2)
+(1, <class 'int'>)
+
+>>> 16 ** 2, type(16 ** 2)
+(256, <class 'int'>)
+
+>>> 2 + 3 * 4, type(2 + 3 * 4)
+(14, <class 'int'>)
+
+>>> (2 + 3) * 4, type((2 + 3) * 4)
+(20, <class 'int'>)
+
+>>> 2 ** 2 * 2 + 2, type(2 ** 2 * 2 + 2)
+(10, <class 'int'>)
+
+>>> (2 ** 2) * (2 + 2), type((2 ** 2) * (2 + 2))
+(16, <class 'int'>)
+
+>>> 1 + 2 + 3 * 4 + 5, type(1 + 2 + 3 * 4 + 5)
+(20, <class 'int'>)
+
+>>> (1 + 2 + 3) * (4 + 5), type((1 + 2 + 3) * (4 + 5))
+(54, <class 'int'>)
+
+>>> 2 < 3 or 5 < 4, type(2 < 3 or 5 < 4)
+(True, <class 'bool'>)
+
+>>> 2 < 3 and 5 < 4, type(2 < 3 and 5 < 4)
+(False, <class 'bool'>)
+
+>>> 2 < 3 and 3 > 1, type(2 < 3 and 3 > 1)
+(True, <class 'bool'>)
+
+>>> 2 < 3 and not 3 > 1, type(2 < 3 and not 3 > 1)
+(False, <class 'bool'>)
+
+>>> "2" + "3" * 4, type("2" + "3" * 4)
+('23333', <class 'str'>)
+
+>>> len("2" + "3" * 4), type(len("2" + "3" * 4))
+(5, <class 'int'>)
+
+
+###########################################################
+1.2: Basic Commands - Variable assignments (10 Points)
+###########################################################
+
+>>> x = 4
+>>> y = x + 1
+>>> x = 2
+>>> print (x , y)
+2 5
+
+>>> x , y = 2 , 6
+>>> x , y = y , x + 2
+>>> print (x , y)
+6 4
+
+>>> a , b = 2 , 3
+>>> c , b = a , c + 1
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'c' is not defined
+>>> print (a , b , c)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'c' is not defined
+
+>>> x = 4
+>>> y = 5
+>>> p = x < y or x < z
+>>> print ( p )
+True
